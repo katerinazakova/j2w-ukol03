@@ -4,6 +4,7 @@ import entity.Vizitka;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 import java.util.List;
@@ -30,7 +31,8 @@ public class VizitkaController {
   @GetMapping("/detail/{id}")
   public ModelAndView detail(@PathVariable int id) {
       ModelAndView modelAndView = new ModelAndView("/detail");
-      modelAndView.addObject("Vizitka", seznamKontaktu.get(id));
+      modelAndView.addObject("seznamKontaktu", seznamKontaktu);
+      modelAndView.addObject("vizitka", seznamKontaktu.get(id));
       return modelAndView;
   }
 }

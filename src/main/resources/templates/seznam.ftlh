@@ -8,8 +8,10 @@
 [#list seznamKontaktu]
 [#items as vizitka]
 <div class="seznam">
-    <a href="/detail">
+
+    <a href="/detail/${vizitka?index}">
         <div class="vizitka">
+
 
             <div class="jmeno">${vizitka.jmeno}</div>
             <div class="firma">${vizitka.firma}</div>
