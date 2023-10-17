@@ -1,4 +1,4 @@
-package entity;
+package cz.czechitas.java2webapps.ukol3.entity;
 
 public class Vizitka {
 
@@ -11,9 +11,9 @@ public class Vizitka {
     private String telefon;
     private String web;
 
-public Vizitka (){
+    public Vizitka() {
 
-}
+    }
 
     public Vizitka(String jmeno, String firma, String ulice, String obecPSC, String email, String telefon, String web) {
         this.jmeno = jmeno;
@@ -25,9 +25,10 @@ public Vizitka (){
         this.web = web;
     }
 
-    public String getCelaAdresa (){
-    return ulice + obecPSC;
+    public String getCelaAdresa() {
+        return ulice + obecPSC;
     }
+
     public String getJmeno() {
         return jmeno;
     }
