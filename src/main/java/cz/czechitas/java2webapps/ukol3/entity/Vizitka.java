@@ -1,5 +1,10 @@
 package cz.czechitas.java2webapps.ukol3.entity;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class Vizitka {
 
     private String jmeno;
@@ -29,59 +34,4 @@ public class Vizitka {
         return ulice + obecPSC;
     }
 
-    public String getJmeno() {
-        return jmeno;
-    }
-
-    public void setJmeno(String jmeno) {
-        this.jmeno = jmeno;
-    }
-
-    public String getFirma() {
-        return firma;
-    }
-
-    public void setFirma(String firma) {
-        this.firma = firma;
-    }
-
-    public String getUlice() {
-        return ulice;
-    }
-
-    public void setUlice(String ulice) {
-        this.ulice = ulice;
-    }
-
-    public String getObecPSC() {
-        return obecPSC;
-    }
-
-    public void setObecPSC(String obecPSC) {
-        this.obecPSC = obecPSC;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getTelefon() {
-        return telefon;
-    }
-
-    public void setTelefon(String telefon) {
-        this.telefon = telefon;
-    }
-
-    public String getWeb() {
-        return web;
-    }
-
-    public void setWeb(String web) {
-        this.web = web;
-    }
 }
