@@ -25,14 +25,14 @@ public class VizitkaController {
 
     @GetMapping("/")
     public ModelAndView seznam() {
-        ModelAndView modelAndView = new ModelAndView("/seznam");
+        ModelAndView modelAndView = new ModelAndView("seznam");
         modelAndView.addObject("seznamKontaktu", seznamKontaktu);
         return modelAndView;
     }
 
     @GetMapping("/detail/{id}")
     public ModelAndView detail(@PathVariable int id) {
-        ModelAndView modelAndView = new ModelAndView("/detail");
+        ModelAndView modelAndView = new ModelAndView("detail");
         modelAndView.addObject("vizitka", seznamKontaktu.get(id));
         return modelAndView;
     }

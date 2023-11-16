@@ -11,7 +11,6 @@ public class Vizitka {
     private String firma;
     private String ulice;
     private String obecPSC;
-    private String celaAdresa;
     private String email;
     private String telefon;
     private String web;
